@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ICCS_Canteen.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Style/main.css" rel="stylesheet" />
+    <link href="Style/demo.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header id="h">  
+<h1>ICCS Canteen System</h1>  
+</header>  
+<nav id="n">  
+    <ul>
+                    <li><a href="WebForm2.aspx">Home</a></li>
+                    <li><a href="AboutUs.aspx">About Us</a></li>
+                    <li><a href="ContactUs.aspx">Contact Us</a></li>
+                    <li><a href="Feedback.aspx">Feedback</a></li>
+     </ul> 
+</nav>
+    <aside id="side">  
+    <h1>Admin panel</h1>  
+    <a href="#"><p>Add food</p><p>remove food</p>monthly invoice</a>  
+    </aside>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer id="footer">  
+     <span>Created By<a href="https://iccs.ac.in/">@Indira College Of Commerce and Science</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span> 
+</footer>  
+    </form>
+</body>
+</html>
